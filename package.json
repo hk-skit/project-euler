@@ -1,0 +1,23 @@
+{
+  "name": "project-euler",
+  "version": "1.0.0",
+  "description": "Code solutions for Project Euler.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hk-skit/project-euler.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hk-skit/project-euler/issues"
+  },
+  "homepage": "https://github.com/hk-skit/project-euler#readme",
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}
