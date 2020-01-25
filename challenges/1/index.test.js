@@ -1,6 +1,6 @@
 const sumOfMultipleOf3Or5 = require('./index');
 
-describe('Day 1: sumOfMultipleOf3Or5', () => {
+describe('Challenge 1: sumOfMultipleOf3Or5', () => {
   [
     {
       n: 0,
