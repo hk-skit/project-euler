@@ -9,7 +9,7 @@ describe('Challenge 14: Longest Collatz sequence', () => {
     { limit: 100000, start: 77031 }
   ].forEach(({ limit, start }) => {
     test(`limit = ${limit}, start = ${start}`, () => {
-      expect(largestCollatzSequence(limit)).toBe(start);
+      expect(largestCollatzSequence(limit)).toEqual(start);
     });
   });
 });
