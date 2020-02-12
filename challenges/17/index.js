@@ -9,7 +9,6 @@
  * contains 23 letters and 115 (one hundred and fifteen) contains 20 letters.
  * The use of "and" when writing out numbers is in compliance with British usage.
  */
-
 const toBritishWords = number => {
   if (number === 0) {
     return 'zero';
@@ -77,15 +76,15 @@ const toBritishWords = number => {
   };
 
   const groups = [];
-  const digits = `${number}`.split('');
-  while (digits.length) {
-    groups.unshift(digits.splice(-3).join(''));
+  while (number !== 0) {
+    groups.unshift(number % 1000);
+    number = Math.floor(number / 1000);
   }
 
   let word = '';
 
   for (let i = 0; i < groups.length; i += 1) {
-    const n = +groups[i];
+    const n = groups[i];
     if (n !== 0) {
       word = toWords(n) + ' ' + scales[groups.length - i - 1] + ' ' + word;
     }
